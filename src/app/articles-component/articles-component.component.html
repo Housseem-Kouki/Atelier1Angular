@@ -1,0 +1,17 @@
+<h1>Les articles du jour</h1> 
+<div>
+    le nombre total des articles affichés : <input type="text"  >
+</div>
+
+
+<div *ngFor="let la of listeArticle; let nombre = index">
+
+  <div style="border: groove;" *ngIf="la.categorie != 'Travail' " [ngStyle]="{'color':la.categorie == 'Education'? 'blue':''}">
+    <div ></div>  
+    Titre : {{la.titre}}
+    Contenu :  {{la.contenu}}
+    Auteur : {{la.auteur}}
+    Date {{la.date}}
+    Categorie : {{la.categorie}}
+  </div><br>
+</div>
