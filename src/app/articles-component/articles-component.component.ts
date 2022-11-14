@@ -14,6 +14,11 @@ export class ArticlesComponentComponent implements OnInit {
     
   ]
   nombre = 0;
+   
+  NombreArticle(){
+    
+  }
+
   constructor() { }
 
   ngOnInit(): void {
