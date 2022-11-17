@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 
 import { FormsModule } from '@angular/forms';
 import { ArticlesComponentComponent } from './articles-component/articles-component.component';
+import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ArticlesComponentComponent } from './articles-component/articles-compon
     OffresEmploiComponent,
     DataBindingComponent,
     ArticlesComponentComponent,
+    ProductsComponent,
     
   ],
   imports: [
