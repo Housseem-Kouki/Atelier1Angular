@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../model/Product';
 
 @Component({
@@ -13,7 +14,7 @@ export class ProductsComponent implements OnInit {
     {id: 2, title: "T-shirt 2", price: 21, quantity: 10, like: 0},
   {id: 3, title: "T-shirt 3", price: 16, quantity: 8, like: 0},
   ]
-  constructor() { }
+  constructor(private r: Router  ) { }
  
   ngOnInit(): void {
   }
@@ -40,5 +41,19 @@ export class ProductsComponent implements OnInit {
   }
 
 
+
+  routage(){
+    this.r.navigate(['articles']);
+  }
+
+
+  updateProduct(id:any){
+this.r.navigate(['/editProduct',id])
+  }
+  addProduct(){
+    this.r.navigate(['addProduct'])
+  }
+
  
 }
+

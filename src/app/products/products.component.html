@@ -3,6 +3,9 @@
     Chercher par prix : 
     <input type="search" [(ngModel)]="prix" />
 </div>
+<div>
+    <button class="btn btn-success" (click)="addProduct()"> Ajouter Produit</button>
+</div>
 <div *ngFor="let p of productList; let i = index">
     <div class="card-group" *ngIf="p.price < prix || prix == null || prix == 0">
        
@@ -17,13 +20,17 @@
                       </p>
                     
             <button (click)="Buy(p.id)" class="btn btn-success" [disabled]="p.quantity==0">Buy</button>
-              <button (click)="Like(p.id)" class="btn btn-primary" >Like</button>       
+              <button (click)="Like(p.id)" class="btn btn-primary" >Like</button>    
+              <button class="btn btn-warning" (click)="updateProduct(p.id)">Modifier Produit</button>  
+              <a [routerLink]="['/editProduct',p.id]" >Modifier 2</a> 
                     </div>
              
         </div>
     </div>
 
-
+<div>
+    <button class="primary" (click)="routage()">Go to Articles</button>
+</div>
 
 </div>
 
