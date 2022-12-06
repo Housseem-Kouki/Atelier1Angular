@@ -11,7 +11,7 @@
 
     <div class="form-group">
         <label for="email">Email</label>
-        <input class="form-control"  type="email" name="email" id="email" required ngModel   #email="ngModel"  pattern="[a-z.]+[a-z]+@+[a-z]{3}"   > 
+        <input class="form-control"  type="email" name="email" id="email" required ngModel   #email="ngModel"  pattern="[a-z A-Z]+[.]+[a-z A-Z]+@+[a-z]{3}"   > 
         <span style="color: red;" *ngIf="email.invalid && email.touched && email.errors?.['required']">Email is required</span>  
         <span style="color: red;" *ngIf="email.errors?.['pattern']">Email Format invalid</span> 
     </div><br>
