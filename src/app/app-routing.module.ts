@@ -6,6 +6,7 @@ import { NotfoundOageComponent } from './notfound-oage/notfound-oage.component';
 import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
 import { ProductsComponent } from './products/products.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { TodoListComponent } from './todo-list/todo-list.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 const routes: Routes =[
   {
@@ -19,6 +20,7 @@ const routes: Routes =[
   {path:'editProduct/:id',component: UpdateProductComponent},
   {path:'addProduct',component: AddProductComponent},
   {path:'TemplateDrivenForm',component: TemplateDrivenFormComponent},
+  {path:'todo',component: TodoListComponent},
   {path:'**',component:NotfoundOageComponent}
 ];
 

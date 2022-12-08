@@ -16,6 +16,8 @@ import { NotfoundOageComponent } from './notfound-oage/notfound-oage.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 
 @NgModule({
@@ -30,14 +32,17 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
     UpdateProductComponent,
     AddProductComponent,
     TemplateDrivenFormComponent,
+    TodoListComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TestModule,
-    FormsModule 
-  ],
+    FormsModule,
+    HttpClientModule
+    
+  ], 
   providers: [],
   bootstrap: [AppComponent]
 })
