@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ErrorHandler, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Product } from '../model/Product';
 import { ProductService } from '../services/product.service';
@@ -24,7 +24,9 @@ export class ProductsComponent implements OnInit {
 //  this.productList = this.productServ.list;
 this.ps.getProducts().subscribe(
   data  => {this.productList = data;},
-  error => {alert("Impossible d'afficher les produits")}
+  error => {alert("Impossible d'afficher les produits") 
+  
+}
 );
   }
 

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from '../model/Product';
 
 @Injectable({
@@ -15,7 +16,7 @@ export class ProductService {
   */
   constructor(private http:HttpClient) { }
   url ="http://localhost:3000/product";
-  getProducts(){
+  getProducts():Observable<Product[]>{
     //return this.list
     return this.http.get<Product[]>(this.url);
   }
@@ -33,7 +34,7 @@ export class ProductService {
     //delete from list
     return this.http.delete<Product>(this.url+"/"+ id);
   }
-  updateProduct(id:number,p:Product){
-    return this.http.put(this.url+"/"+id, p);
+  updateProduct(id:number,p:Product): Observable<Product>{
+    return this.http.put<Product>(this.url+"/"+id, p);
   }
 }
