@@ -65,6 +65,14 @@ this.r.navigate(['/editProduct',id])
     this.r.navigate(['addProduct'])
   }
 
+  deleteProduct(id:Number){
+    this.ps.deleteProduct(id).subscribe(
+      () => window.location.reload()
+      
+    );
+  }
+
+
  
 }
 

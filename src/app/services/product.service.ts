@@ -30,7 +30,7 @@ export class ProductService {
     return this.http.post<Product>(this.url, p);
   }
 
-  deleteProduct(id:number){
+  deleteProduct(id:Number){
     //delete from list
     return this.http.delete<Product>(this.url+"/"+ id);
   }

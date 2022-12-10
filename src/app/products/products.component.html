@@ -19,9 +19,10 @@
                        Like : {{p.like}} <br>
                       </p>
                     
-            <button (click)="Buy(p.id)" class="btn btn-success" [disabled]="p.quantity==0">Buy</button>
-              <button (click)="Like(p.id)" class="btn btn-primary" >Like</button>    
-              <button class="btn btn-warning" (click)="updateProduct(p.id)">Modifier Produit</button>  
+            <button (click)="Buy(p.id)" class="btn btn-success me-md-2"  [disabled]="p.quantity==0">Buy</button>
+              <button (click)="Like(p.id)" class="btn btn-primary me-md-2" >Like</button>    
+              <button class="btn btn-warning me-md-2" (click)="updateProduct(p.id)">Modifier Produit</button> 
+              <button class="btn btn-danger me-md-2" (click)="deleteProduct(p.id)">Delete Produit</button>  
               <a [routerLink]="['/editProduct',p.id]" >Modifier 2</a> 
                     </div>
              

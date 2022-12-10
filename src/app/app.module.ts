@@ -18,6 +18,8 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { UsersComponent } from './users/users.component';
+import { TodoUserComponent } from './todo-user/todo-user.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     AddProductComponent,
     TemplateDrivenFormComponent,
     TodoListComponent,
+    UsersComponent,
+    TodoUserComponent,
     
   ],
   imports: [
