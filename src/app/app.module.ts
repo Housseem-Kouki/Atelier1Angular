@@ -20,6 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { UsersComponent } from './users/users.component';
 import { TodoUserComponent } from './todo-user/todo-user.component';
+import { ProductItemComponent } from './product-item/product-item.component';
+import { ConvertisseurComponentComponent } from './convertisseur-component/convertisseur-component.component';
+import { ToEuroConvertComponentComponent } from './to-euro-convert-component/to-euro-convert-component.component';
+import { ActorsComponentComponent } from './actors-component/actors-component.component';
+import { ActorComponentComponent } from './actor-component/actor-component.component';
 
 
 @NgModule({
@@ -37,6 +42,11 @@ import { TodoUserComponent } from './todo-user/todo-user.component';
     TodoListComponent,
     UsersComponent,
     TodoUserComponent,
+    ProductItemComponent,
+    ConvertisseurComponentComponent,
+    ToEuroConvertComponentComponent,
+    ActorsComponentComponent,
+    ActorComponentComponent,
     
   ],
   imports: [
